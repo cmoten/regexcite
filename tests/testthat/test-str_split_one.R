@@ -1,9 +1,9 @@
-test_that("strsplit1() splits a string", {
-  expect_equal(strsplit1("a,b,c", ","), c("a", "b", "c"))
+test_that("str_split_one() splits a string", {
+  expect_equal(str_split_one("a,b,c", ","), c("a", "b", "c"))
 })
 
-test_that("strsplit1() errors if input length > 1", {
-  expect_error(strsplit1(c("a,b","c,d"), ","))
+test_that("str_split_one() errors if input length > 1", {
+  expect_error(str_split_one(c("a,b","c,d"), ","))
 })
 
 test_that("str_split_one() exposes features of stringr::str_split()", {
